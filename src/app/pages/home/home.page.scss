@@ -1,11 +1,20 @@
+#container {
+  display: flex;
+  flex-direction: column;
+}
 .topo-menu {
   background-color: var(--ion-color-primary);
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
   height: auto;
   justify-content: space-between;
   padding: 25px 15px;
+}
+.barra-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .topo-image a img {
   border-radius: 100%;
@@ -14,14 +23,20 @@
 }
 .topo-links {
   display: flex;
-  direction: row;
+  flex-direction: row;
   align-items: center;
-  margin-right: 20px;
-  justify-content: space-around;
+  margin-right: 5px;
 }
-
+.link-a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .topo-links ion-icon {
   display: flex;
-  font-size: 30px;
+  font-size: 15px;
   color: var(--ion-text-color);
+}
+.container-geral {
+  background-color: var(--ion-color-primary-contrast);
 }
