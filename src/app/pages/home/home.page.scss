@@ -1,0 +1,25 @@
+.topo-menu {
+  background-color: var(--ion-color-primary);
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+  padding: 25px 15px;
+}
+.topo-image a img {
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+}
+.topo-links {
+  display: flex;
+  direction: row;
+  align-items: center;
+  margin-right: 20px;
+}
+.topo-links ion-icon {
+  display: flex;
+  font-size: 30px;
+  color: var(--ion-text-color);
+}
