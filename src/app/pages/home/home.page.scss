@@ -41,6 +41,7 @@
   flex-direction: row;
   justify-content: space-between;
   border: 1px solid white;
+  align-items: center;
 
   a {
     display: flex;
@@ -62,8 +63,16 @@
 .text-nameCleinte p {
   margin-left: 35px;
   color: var(--ion-color-primary-contrast);
+  font-size: 21px;
 }
 .container-geral {
   display: flex;
   flex-direction: column;
+}
+.conta {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 25px;
+  font-size: 25px;
 }
