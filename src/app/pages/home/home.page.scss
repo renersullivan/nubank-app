@@ -76,3 +76,41 @@
   padding: 25px;
   font-size: 25px;
 }
+
+.conta-btns {
+  overflow-x: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid green;
+
+  .btn-arounded {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 17px 0 0;
+
+    .btn-pix {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid red;
+      width: 70px;
+      height: 70px;
+      border-radius: 100%;
+      align-items: center;
+      justify-content: center;
+
+      .text-pix {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+      }
+      .icon-pix {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        border: 1px solid blue;
+      }
+    }
+  }
+}
