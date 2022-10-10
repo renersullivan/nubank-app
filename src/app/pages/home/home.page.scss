@@ -83,6 +83,7 @@
   flex-direction: row;
   justify-content: space-between;
   border: 1px solid green;
+  margin-bottom: 50px;
 
   .btn-arounded {
     display: flex;
@@ -93,12 +94,13 @@
     .btn-pix {
       display: flex;
       flex-direction: column;
-      border: 1px solid red;
+      border: 1px solid var(--ion-color-secondary);
       width: 70px;
       height: 70px;
       border-radius: 100%;
       align-items: center;
       justify-content: center;
+      background-color: var(--ion-color-secondary);
 
       .text-pix {
         justify-content: center;
@@ -113,4 +115,33 @@
       }
     }
   }
+}
+.meus-cartoes {
+  display: flex;
+  width: auto;
+  padding-left: 15px;
+  border: 1px solid black;
+  align-items: center;
+  background-color: var(--ion-color-secondary);
+  border-radius: 15px;
+  margin: 0px 15px 22px 15px;
+
+  p {
+    margin-left: 10px;
+  }
+}
+.cards-father {
+  overflow-x: auto;
+  display: flex;
+  flex-direction: row;
+}
+.card-info {
+  display: flex;
+  min-width: 80%;
+  height: 55px;
+  padding-left: 15px;
+  border: 1px solid black;
+  background-color: var(--ion-color-secondary);
+  border-radius: 15px;
+  margin: 0px 15px 0 15px;
 }
