@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: column;
 }
+.barra {
+  border-bottom: 1px solid var(--ion-color-primary-contrast);
+  width: 100%;
+}
 .topo-menu {
   background-color: var(--ion-color-primary);
   display: flex;
@@ -40,7 +44,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border: 1px solid white;
+
   align-items: center;
 
   a {
@@ -49,13 +53,11 @@
     align-items: center;
     margin-right: 19px;
     justify-content: space-between;
-    border: 1px solid red;
 
     ion-icon {
       display: flex;
       font-size: 27px;
       color: var(--ion-color-primary-contrast);
-      border: 1px solid blue;
     }
   }
 }
@@ -68,13 +70,14 @@
 .container-geral {
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
 }
 .conta {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 25px;
-  font-size: 25px;
+  align-items: center;
 }
 
 .conta-btns {
@@ -82,7 +85,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border: 1px solid green;
+
   margin-bottom: 50px;
 
   .btn-arounded {
@@ -111,7 +114,6 @@
         justify-content: center;
         display: flex;
         align-items: center;
-        border: 1px solid blue;
       }
     }
   }
@@ -125,6 +127,7 @@
   background-color: var(--ion-color-secondary);
   border-radius: 15px;
   margin: 0px 15px 22px 15px;
+  cursor: pointer;
 
   p {
     margin-left: 10px;
@@ -137,11 +140,32 @@
 }
 .card-info {
   display: flex;
-  min-width: 80%;
-  height: 55px;
+  min-width: 70%;
+  height: 70px;
   padding-left: 15px;
   border: 1px solid black;
   background-color: var(--ion-color-secondary);
   border-radius: 15px;
   margin: 0px 15px 0 15px;
+}
+.card-fatura {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px;
+
+  .fatura-atual {
+  }
+  .btn-reserva {
+    display: flex;
+    border: 1px solid var(--ion-color-primary);
+    background-color: var(--ion-color-primary);
+    color: var(--ion-color-secondary);
+    border-radius: 10px;
+    width: 208px;
+    height: 23px;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+  }
 }
