@@ -160,20 +160,14 @@
   a {
     text-decoration: none;
   }
-
-  img {
-    width: 94px;
-    height: 160px;
-  }
 }
 .card-info-footer {
   display: flex;
   flex-direction: column;
   min-width: 43%;
   height: 200px;
-  padding-left: 15px;
   background-color: var(--ion-color-secondary);
-  border-radius: 15px;
+  border-radius: 15px 15px 0 0;
   margin: 0px 15px 0;
   font-size: 14px;
   a {
@@ -182,9 +176,14 @@
 
   img {
     width: auto;
-    height: auto;
+    height: 103px;
+    border-radius: 15px 15px 0 0;
+  }
+  p {
+    padding-left: 15px;
   }
 }
+
 .card-fatura {
   display: flex;
   flex-direction: column;
