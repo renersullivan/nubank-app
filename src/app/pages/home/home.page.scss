@@ -81,10 +81,12 @@
 }
 .conta {
   display: flex;
+  height: 40px;
   flex-direction: row;
   justify-content: space-between;
   padding: 25px 25px 0;
   align-items: center;
+  font-size: 16px;
   cursor: pointer;
 }
 
@@ -171,7 +173,7 @@
   display: flex;
   flex-direction: column;
   min-width: 43%;
-  height: auto;
+  height: 260px;
   background-color: var(--ion-color-secondary);
   border-radius: 15px 15px 0 0;
   margin: 0px 15px 0;
@@ -188,11 +190,12 @@
   }
   p {
     padding: 0px 15px 0px 15px;
-    font-size: 16px;
+    font-size: 17px;
     color: var(--ion-color-medium);
   }
   h3 {
-    padding: 0px 15px 0px 15px;
+    margin: 0px;
+    padding: 15px 15px 0px 15px;
     font-size: 14px;
   }
 }
