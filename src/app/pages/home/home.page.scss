@@ -17,7 +17,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 20px;
+  padding: 15px;
   margin-top: 35px;
 }
 #notification-button {
@@ -75,8 +75,8 @@
   .h3 {
     display: flex;
     justify-content: left;
-    padding: 0px 25px 25px 25px;
-    height: 100px;
+    padding: 0px 25px 0px 25px;
+    height: 65px;
   }
 }
 .conta {
@@ -88,6 +88,9 @@
   align-items: center;
   font-size: 16px;
   cursor: pointer;
+  p {
+    color: var(--ion-color-medium);
+  }
 }
 
 .conta-btns {
@@ -126,6 +129,11 @@
         justify-content: center;
         display: flex;
         align-items: center;
+        width: 35px;
+        height: 35px;
+      }
+      svg {
+        width: 200px;
       }
     }
   }
@@ -164,7 +172,7 @@
   background-color: var(--ion-color-secondary);
   border-radius: 15px;
   margin: 0px 15px 0;
-  font-size: 14px;
+  font-size: 17px;
   a {
     text-decoration: none;
   }
@@ -206,6 +214,13 @@
   justify-content: space-between;
   padding: 25px;
 
+  p {
+    margin: 15px 0px 10px 0px;
+  }
+
+  .valor-fatura {
+    height: 31px;
+  }
   .fatura-atual {
     display: flex;
     flex-direction: column;
@@ -250,7 +265,7 @@
   border: 1px solid var(--ion-color-primary);
   border-radius: 25px;
   width: 89px;
-  height: 24px;
+  height: 34px;
   align-items: center;
   justify-content: center;
   margin-left: 15px;
@@ -263,7 +278,7 @@
   border: 1px solid var(--ion-color-primary);
   border-radius: 25px;
   width: 89px;
-  height: 24px;
+  height: 34px;
   align-items: center;
   justify-content: center;
   font-size: 10px;
@@ -276,7 +291,7 @@
   border: 1px solid var(--ion-color-primary);
   border-radius: 25px;
   width: 89px;
-  height: 24px;
+  height: 34px;
   align-items: center;
   justify-content: center;
   margin-left: 15px;
