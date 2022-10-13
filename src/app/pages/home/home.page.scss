@@ -215,7 +215,7 @@
   padding: 25px;
 
   p {
-    margin: 15px 0px 10px 0px;
+    margin: 1px 0px 10px 0px;
   }
 
   .valor-fatura {
@@ -232,10 +232,11 @@
     color: var(--ion-color-secondary);
     border-radius: 20px;
     width: 208px;
-    height: 36px;
+    height: 43px;
     justify-content: center;
     align-items: center;
     font-size: 16px;
+    margin-top: 25px;
   }
 }
 .assitente {
