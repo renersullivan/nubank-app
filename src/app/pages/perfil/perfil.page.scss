@@ -1,0 +1,9 @@
+.topo-geral {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: val(--ion-color-medium);
+  border: 1px solid black;
+}

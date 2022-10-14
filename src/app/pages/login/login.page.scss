@@ -1,0 +1,126 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  height: 850px;
+  z-index: 1;
+  background-color: #820ad1;
+  background-size: cover;
+}
+.logo-nubak {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-nubak svg {
+  position: absolute;
+  top: auto;
+  left: auto;
+  transition: all 1s;
+  margin-bottom: 82px;
+}
+.nu-box {
+  width: 92%;
+  height: 600px;
+  max-width: 28rem;
+  margin: 1rem auto 0;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1.8rem rgb(0 0 0 / 15%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.text-login {
+  padding: 1px;
+}
+.text-login p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 24px;
+  padding: 52px;
+}
+.form.content {
+  padding: 1rem 4rem 0;
+  width: 100%;
+  transition: all 250ms ease;
+  position: absolute;
+  top: 0;
+}
+.nu-box .form-content {
+  overflow: hidden;
+}
+.form-content {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 2px 2px 26px;
+}
+input {
+  display: flex;
+  border: none;
+  border-bottom-style: dotted;
+  border-width: 0 0 1px;
+  font-size: 14pt;
+  margin: 8px 0;
+  outline: 0;
+}
+label {
+  margin: 16px;
+}
+#cpf,
+#senha {
+  color: #404040;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+  border-color: #a0a0a0;
+  text-shadow: none;
+  width: 100%;
+  margin: 8px 0;
+}
+.btn-enviar:hover {
+  transition: all 0.2s;
+  background-color: #820ad1;
+  color: white;
+}
+.link-senha {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.link-senha a {
+  display: flex;
+  text-decoration: none;
+  color: #820ad1;
+  outline: 0;
+}
+
+.btn-enviar {
+  transition: all 0.2s;
+  border: 1px solid #820ad1;
+  color: #820ad1;
+  width: 50%;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 3px;
+  opacity: 0;
+  margin-bottom: 20px;
+}
+
+.btn-continua {
+  transition: all 0.2s;
+  opacity: 1;
+  margin-top: 10px;
+}

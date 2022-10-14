@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 import { StatusBar, Style } from '@capacitor/status-bar';
 @Component({
@@ -7,23 +8,9 @@ import { StatusBar, Style } from '@capacitor/status-bar';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  constructor() {
-    StatusBar.setOverlaysWebView({ overlay: true });
+  constructor(private router: Router) {}
 
-    const setStatusBarStyleDark = async () => {
-      await StatusBar.setStyle({ style: Style.Dark });
-    };
-
-    const setStatusBarStyleLight = async () => {
-      await StatusBar.setStyle({ style: Style.Light });
-    };
-
-    const hideStatusBar = async () => {
-      await StatusBar.hide();
-    };
-
-    const showStatusBar = async () => {
-      await StatusBar.show();
-    };
+  navigate() {
+    this.router.navigate(['/home']);
   }
 }
