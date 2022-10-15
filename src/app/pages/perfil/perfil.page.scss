@@ -20,27 +20,27 @@
   align-items: center;
   justify-content: center;
   display: flex;
-  border: 1px solid green;
+  font-weight: bolder;
 }
 .agencia-conta {
   margin-top: 15px;
   display: flex;
-  border: 1px solid red;
   flex-direction: row;
   p {
     margin: 0px;
+    font-weight: bolder;
   }
 }
 .text-agencia-conta {
   margin: 0px;
   display: flex;
-  border: 1px solid blue;
+  font-weight: bolder;
 }
 .text-banco {
   margin-bottom: 25px;
   display: flex;
-  border: 1px solid red;
   p {
+    font-weight: bolder;
     margin: 0px;
   }
 }
@@ -51,6 +51,8 @@
   padding: 0 15px 0 15px;
   border-bottom: 1px solid var(--ion-color-secondary);
   font-size: 17px;
+  font-weight: bolder;
+  cursor: pointer;
 }
 .menu {
   display: flex;
