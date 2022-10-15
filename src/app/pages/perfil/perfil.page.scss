@@ -1,9 +1,69 @@
 .topo-geral {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
   width: 100%;
   height: auto;
-  background-color: val(--ion-color-medium);
   border: 1px solid black;
+  background-color: var(--ion-color-secondary);
+  padding-left: 30px;
+  padding-top: 40px;
+}
+.text-foto {
+  display: flex;
+  flex-direction: row;
+}
+.topo-image {
+  display: flex;
+}
+.text-perfil {
+  margin-left: 15px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border: 1px solid green;
+}
+.agencia-conta {
+  margin-top: 15px;
+  display: flex;
+  border: 1px solid red;
+  flex-direction: row;
+  p {
+    margin: 0px;
+  }
+}
+.text-agencia-conta {
+  margin: 0px;
+  display: flex;
+  border: 1px solid blue;
+}
+.text-banco {
+  margin-bottom: 25px;
+  display: flex;
+  border: 1px solid red;
+  p {
+    margin: 0px;
+  }
+}
+.box-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 15px 0 15px;
+  border-bottom: 1px solid var(--ion-color-secondary);
+  font-size: 17px;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.icon-menu {
+  margin-right: 10px;
+}
+.text-menu {
+  display: flex;
+}
+.arrow {
+  display: flex;
+  align-items: center;
 }
