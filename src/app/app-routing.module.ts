@@ -22,6 +22,13 @@ const routes: Routes = [
     loadChildren: () =>
       import('./pages/inicio/inicio.module').then((m) => m.InicioPageModule),
   },
+  {
+    path: 'tab2',
+    loadChildren: () =>
+      import('./pages/tab-meio/tab-meio.module').then(
+        (m) => m.TabMeioPageModule
+      ),
+  },
 ];
 
 @NgModule({

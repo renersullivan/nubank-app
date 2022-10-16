@@ -25,7 +25,13 @@ const routes: Routes = [
             (m) => m.PerfilPageRoutingModule
           ),
       },
-
+      {
+        path: 'tab2',
+        loadChildren: () =>
+          import('../../pages/tab-meio/tab-meio.module').then(
+            (m) => m.TabMeioPageModule
+          ),
+      },
       {
         path: '**',
         redirectTo: 'home',
