@@ -1,7 +1,11 @@
 <ion-content>
   <div class="container-geral">
     <div class="icons-top">
-      <ion-icon class="icon-top" name="chevron-back-outline"></ion-icon>
+      <ion-icon
+        [routerLink]="['/nu']"
+        class="icon-top"
+        name="chevron-back-outline"
+      ></ion-icon>
       <ion-icon class="icon-top" name="help-circle-outline"></ion-icon>
     </div>
     <div class="meus-investimentos">
@@ -56,14 +60,32 @@
         <p>Minha Carteira</p>
       </div>
       <div class="chart-pizza">
-        <div class="chart"></div>
-        <div class="text-chart">
-          <p class="p-1">Voçê só tem um tipo de investimento na carteira</p>
-          <p class="p-2">
-            Para equilibrar risco e retorno, invista em ativos diferentes.
-          </p>
+        <div class="chart-pizza-texts">
+          <div class="chart"></div>
+          <div class="text-chart">
+            <p class="p-1">Voçê só tem um tipo de investimento na carteira</p>
+            <p class="p-2">
+              Para equilibrar risco e retorno, invista em ativos diferentes.
+            </p>
+          </div>
+        </div>
+        <div class="bolsa-rendimento">
+          <div class="divisao-text">
+            <div class="icon-rendimento">
+              <ion-icon color="purple" name="ellipse-outline"></ion-icon>
+            </div>
+            <div class="text-rendimento">
+              <p>Bolsa de valores</p>
+              <h5>R$ 3,60</h5>
+            </div>
+          </div>
+          <div class="text-rendimento2">
+            <p>100%</p>
+            <h5><ion-icon name="arrow-up-outline"></ion-icon>R$ 0,47</h5>
+          </div>
         </div>
       </div>
     </div>
+    <div class="barra"></div>
   </div>
 </ion-content>
