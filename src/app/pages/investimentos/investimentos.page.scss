@@ -214,3 +214,14 @@ h5 {
     font-size: 14px;
   }
 }
+.continue-aprendendo {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+
+  .aprendendo {
+    border: 1px solid black;
+    background: var(--ion-color-secondary);
+    padding: 30px;
+  }
+}
