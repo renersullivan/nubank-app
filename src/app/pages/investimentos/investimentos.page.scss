@@ -190,3 +190,27 @@ h5 {
 h5 {
   margin: 10px 0px;
 }
+.cdbs {
+  display: flex;
+  justify-content: space-between;
+  padding: 21px;
+  .cdb {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    p {
+      margin-left: 10px;
+    }
+  }
+  .btn-explorar {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--ion-color-secondary);
+    width: 90px;
+    justify-content: center;
+    border-radius: 25px;
+    background: var(--ion-color-secondary);
+    font-size: 14px;
+  }
+}
