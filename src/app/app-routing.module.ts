@@ -29,6 +29,10 @@ const routes: Routes = [
         (m) => m.TabMeioPageModule
       ),
   },
+  {
+    path: 'investimentos',
+    loadChildren: () => import('./pages/investimentos/investimentos.module').then( m => m.InvestimentosPageModule)
+  },
 ];
 
 @NgModule({

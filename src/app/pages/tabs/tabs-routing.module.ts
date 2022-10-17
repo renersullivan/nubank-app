@@ -1,3 +1,4 @@
+import { InvestimentosPageModule } from './../investimentos/investimentos.module';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
@@ -30,6 +31,13 @@ const routes: Routes = [
         loadChildren: () =>
           import('../../pages/tab-meio/tab-meio.module').then(
             (m) => m.TabMeioPageModule
+          ),
+      },
+      {
+        path: 'investimentos',
+        loadChildren: () =>
+          import('../../pages/investimentos/investimentos.module').then(
+            (m) => m.InvestimentosPageModule
           ),
       },
       {
