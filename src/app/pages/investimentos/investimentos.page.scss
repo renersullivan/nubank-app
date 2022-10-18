@@ -220,8 +220,24 @@ h5 {
   padding: 25px;
 
   .aprendendo {
-    border: 1px solid black;
+    border: 1px solid var(--ion-color-secondary);
     background: var(--ion-color-secondary);
+    border-radius: 4%;
     padding: 30px;
+
+    h5 {
+      color: var(--ion-color-medium-shade);
+    }
   }
+}
+.btn-acessar {
+  width: 177px;
+  height: 53px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--ion-color-primary);
+  border-radius: 25px;
+  background-color: var(--ion-color-primary);
+  color: var(--ion-color-secondary);
 }
