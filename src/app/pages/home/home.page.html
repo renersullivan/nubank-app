@@ -36,7 +36,7 @@
       </div>
 
       <div class="text-nameCleinte">
-        <p>Olá, Rener</p>
+        <p>{{resposta.msgWelcome}}</p>
       </div>
     </div>
 
@@ -46,7 +46,7 @@
 
         <ion-icon name="chevron-forward-outline"></ion-icon>
       </div>
-      <div class="h3"><h3>R$18000,00</h3></div>
+      <div class="h3"><h3>{{resposta.saldoCli}}</h3></div>
       <div class="conta-btns">
         <div class="btn-arounded">
           <div class="btn-pix">
@@ -135,8 +135,8 @@
       <div class="card-fatura">
         <div class="fatura-atual">
           <p class="text-fatura">Fatura atual</p>
-          <div class="valor-fatura">R$1000,00</div>
-          <p>Limite disponivel de R$ 19000,00</p>
+          <div class="valor-fatura">R${{resposta.fatAtual}}</div>
+          <p>Limite disponivel de R$ {{resposta.limiteDisp}}</p>
         </div>
         <div class="btn-reserva">Reservar valor como limite</div>
       </div>
