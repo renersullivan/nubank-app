@@ -22,7 +22,7 @@
         </div>
         <div class="topo-links">
           <div class="link-a">
-            <a routerLink="">
+            <a (click)="toggleValue()">
               <ion-icon name="eye-outline"></ion-icon>
             </a>
             <a routerLink="">
@@ -36,7 +36,7 @@
       </div>
 
       <div class="text-nameCleinte">
-        <p>{{resposta.msgWelcome}}</p>
+        <p>{{resposta?.msgWelcome}}</p>
       </div>
     </div>
 
@@ -46,7 +46,11 @@
 
         <ion-icon name="chevron-forward-outline"></ion-icon>
       </div>
-      <div class="h3"><h3>{{resposta.saldoCli}}</h3></div>
+      <div class="h3">
+        <h3 *ngIf="hideValue === true">********</h3>
+        <h3 *ngIf="hideValue === false">{{resposta?.saldoCli}}</h3>
+      </div>
+
       <div class="conta-btns">
         <div class="btn-arounded">
           <div class="btn-pix">
@@ -135,8 +139,13 @@
       <div class="card-fatura">
         <div class="fatura-atual">
           <p class="text-fatura">Fatura atual</p>
-          <div class="valor-fatura">R${{resposta.fatAtual}}</div>
-          <p>Limite disponivel de R$ {{resposta.limiteDisp}}</p>
+          <div class="valor-fatura" *ngIf="hideValue === false">
+            R${{resposta?.fatAtual}}
+          </div>
+          <p *ngIf="hideValue === false">
+            Limite disponivel de R$ {{resposta?.limiteDisp}}
+          </p>
+          <h3 *ngIf="hideValue === true">********</h3>
         </div>
         <div class="btn-reserva">Reservar valor como limite</div>
       </div>

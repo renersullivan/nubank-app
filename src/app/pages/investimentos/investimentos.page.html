@@ -10,13 +10,13 @@
     </div>
     <div class="meus-investimentos">
       <p class="p-invest">Meu investimentos</p>
-      <h1>R$ 3,60</h1>
+      <h1>R${{investimentos?.rendTotal.valorTotalD}}</h1>
     </div>
     <div class="valor-aplicado">
       <div class="icon-valor"><ion-icon name="archive-outline"></ion-icon></div>
       <div class="text-valor">
         <p>Valor aplicado</p>
-        <h5>R$ 3,13</h5>
+        <h5>R$ {{investimentos?.rendTotal.valorAplicadoD}}</h5>
       </div>
     </div>
     <div class="rendimento">
@@ -25,7 +25,11 @@
       </div>
       <div class="text-rendimento">
         <p>Rendimento total</p>
-        <h5><ion-icon name="arrow-up-outline"></ion-icon>R$ 3,13</h5>
+        <h5>
+          <ion-icon name="arrow-up-outline"></ion-icon>
+
+          <p *ngIf="investimentos">R${{investimentos.rendTotal.rendTotalP}}</p>
+        </h5>
       </div>
     </div>
     <div class="conta-btns">
@@ -63,25 +67,30 @@
         <div class="chart-pizza-texts">
           <div class="chart"></div>
           <div class="text-chart">
-            <p class="p-1">Voçê só tem um tipo de investimento na carteira</p>
+            <p class="p-1">Carteira de Investimentos</p>
             <p class="p-2">
               Para equilibrar risco e retorno, invista em ativos diferentes.
             </p>
           </div>
         </div>
-        <div class="bolsa-rendimento">
+        <div
+          class="bolsa-rendimento"
+          *ngFor="let invest of investimentos?.investTotal"
+        >
           <div class="divisao-text">
             <div class="icon-rendimento">
               <ion-icon color="purple" name="ellipse-outline"></ion-icon>
             </div>
             <div class="text-rendimento">
-              <p>Bolsa de valores</p>
-              <h5>R$ 3,60</h5>
+              <p>{{invest.name}}</p>
+              <h5>R$ {{invest.valDin}}</h5>
             </div>
           </div>
           <div class="text-rendimento2">
-            <p>100%</p>
-            <h5><ion-icon name="arrow-up-outline"></ion-icon>R$ 0,47</h5>
+            <p>{{invest.quant}} Ações</p>
+            <h5>
+              <ion-icon name="arrow-up-outline"></ion-icon>R$ {{invest.valPor}}
+            </h5>
           </div>
         </div>
       </div>

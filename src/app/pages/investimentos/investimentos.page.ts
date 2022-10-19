@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { investResponse } from 'src/app/model/home.model';
+import {
+  investimentos,
+  investResponse,
+  listOfInvest,
+} from 'src/app/model/investimentos.model';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
@@ -8,15 +12,25 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./investimentos.page.scss'],
 })
 export class InvestimentosPage implements OnInit {
-  investimento: investResponse;
+  investimentos: investimentos;
 
   constructor(private httpClient: HttpClient) {}
 
+  hideValue: boolean = true;
+
   ngOnInit(): void {
+    this.buscarDadosDeInvestimentos();
+  }
+
+  buscarDadosDeInvestimentos() {
     this.httpClient
-      .get<investResponse>('http://localhost:3000/investimentos')
+      .get<investimentos>('http://localhost:3000/investimentos')
       .subscribe((resultado) => {
-        this.investimento = resultado;
+        this.investimentos = resultado;
+        console.log(resultado);
       });
+  }
+  toogleValue() {
+    this.hideValue = !this.hideValue;
   }
 }

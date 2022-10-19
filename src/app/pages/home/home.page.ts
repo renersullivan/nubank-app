@@ -15,6 +15,8 @@ export class HomePage implements OnInit {
 
   constructor(private router: Router, private httpClient: HttpClient) {}
 
+  hideValue: boolean = true;
+
   ngOnInit(): void {
     this.httpClient
       .get<homeResponse>('http://localhost:3000/home')
@@ -22,6 +24,10 @@ export class HomePage implements OnInit {
         console.log(sacola);
         this.resposta = sacola;
       });
+  }
+
+  toggleValue() {
+    this.hideValue = !this.hideValue;
   }
 
   navigate() {
