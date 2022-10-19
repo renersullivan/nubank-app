@@ -1,0 +1,44 @@
+{
+  "home": {
+    "imgPer": "src/assets/icon/rener-perfil.jpg",
+    "saldoCli": "10.000,00",
+    "fatAtual": "150,00",
+    "limiteDisp": "12,000,00",
+    "msgWelcome": "Olá, Rener"
+  },
+  "investimentos": {
+    "investTotal": [
+      {
+        "name": "Tesla",
+        "quant": "5",
+        "valDin": "45,00",
+        "valPor": "35%"
+      },
+
+      {
+        "name": "Petrobras",
+        "quant": "53",
+        "valDin": "150,00",
+        "valPor": "15%"
+      },
+      {
+        "name": "Facebook",
+        "quant": "5",
+        "valDin": "45,00",
+        "valPor": "21%"
+      },
+
+      {
+        "name": "Nubank",
+        "quant": "15",
+        "valDin": "5,00",
+        "valPor": "9,25%"
+      }
+    ],
+    "rendTotal": {
+      "valorTotalD": "3,60",
+      "valorAplicadoD": "3,14",
+      "rendTotalP": "43%"
+    }
+  }
+}
