@@ -5,10 +5,6 @@ export interface investResponse {
   valPor: string;
 }
 
-export interface listOfInvest {
-  Array(investResponse);
-}
-
 export interface rendTotal {
   valorTotalD: string;
   valorAplicadoD: string;
@@ -16,6 +12,6 @@ export interface rendTotal {
 }
 
 export interface investimentos {
-  investTotal: listOfInvest;
+  investTotal: investResponse[];
   rendTotal: rendTotal;
 }

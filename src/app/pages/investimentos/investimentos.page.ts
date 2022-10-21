@@ -1,9 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {
-  investimentos,
-  investResponse,
-  listOfInvest,
-} from 'src/app/model/investimentos.model';
+import { investimentos } from 'src/app/model/investimentos.model';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
