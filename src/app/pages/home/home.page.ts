@@ -17,7 +17,13 @@ export class HomePage implements OnInit {
 
   hideValue: boolean = true;
 
+  eyeIconVariable: string = 'eye-off-outline';
+
   ngOnInit(): void {
+    this.buscarDadosDaHome();
+  }
+
+  buscarDadosDaHome() {
     this.httpClient
       .get<homeResponse>('http://localhost:3000/home')
       .subscribe((sacola) => {
@@ -26,8 +32,25 @@ export class HomePage implements OnInit {
       });
   }
 
-  toggleValue() {
-    this.hideValue = !this.hideValue;
+  apertouBotaoEsconderValores() {
+    this.inverterValorHide();
+    this.trocarIconOlho();
+  }
+
+  inverterValorHide() {
+    this.hideValue = !this.hideValue; //estou invertendo o valor
+  }
+
+  trocarIconOlho() {
+    if (this.hideValue === true) {
+      this.eyeIconVariable = 'eye-off-outline';
+      return;
+    }
+
+    if (this.hideValue === false) {
+      this.eyeIconVariable = 'eye-outline';
+      return;
+    }
   }
 
   navigate() {
