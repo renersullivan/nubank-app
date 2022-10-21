@@ -25,28 +25,10 @@
       <div class="form-content">
         <form>
           <label for="cpf">CPF</label>
-          <input
-            type="text"
-            name="cpf"
-            value=""
-            (input)="detectCpf($event.target)"
-          />
-
-          <label for="senha">Senha</label>
-          <input
-            type="password"
-            id="senha"
-            name="senha"
-            (input)="detectSenha($event.target)"
-            required
-          />
+          <input type="text" name="cpf" id="cpf" (keyup)="cadastrar($event)" />
         </form>
       </div>
-      <div
-        [routerLink]="['/nu']"
-        [ngClass]="cpf !== ''? 'btn-continua': 'btn-normal' "
-        class="btn-enviar"
-      >
+      <div [ngClass]="'btn-continua'" class="btn-enviar" (click)="fazerLogin()">
         Continuar
       </div>
 

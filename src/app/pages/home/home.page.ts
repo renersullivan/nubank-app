@@ -32,12 +32,12 @@ export class HomePage implements OnInit {
 
   buscarDadosDaHome() {
     this.httpClient
-      .get<homeResponse>('http://localhost:3000/home')
+      .get<homeResponse>('http://localhost:3333/home')
       .subscribe((sacola) => {
-        console.log(sacola);
         this.resposta = sacola;
       });
   }
+  logar() {}
 
   apertouBotaoEsconderValores() {
     this.inverterValorHide();
