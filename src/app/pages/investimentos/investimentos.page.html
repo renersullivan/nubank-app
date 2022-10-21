@@ -73,10 +73,7 @@
             </p>
           </div>
         </div>
-        <div
-          class="bolsa-rendimento"
-          *ngFor="let invest of investimentos?.investTotal"
-        >
+        <div class="bolsa-rendimento" *NgForOf="let invest of investimentos">
           <div class="divisao-text">
             <div class="icon-rendimento">
               <ion-icon color="purple" name="ellipse-outline"></ion-icon>
