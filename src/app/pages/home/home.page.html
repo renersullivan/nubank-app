@@ -53,12 +53,12 @@
 
       <div class="conta-btns">
         <div class="btn-arounded">
-          <div class="btn-pix">
+          <div class="btn-pix" (click)="openIonModal('Transferencia Pix')">
             <ion-icon class="icon-pix" name="code-working-outline"></ion-icon>
           </div>
           <p class="text-pix">Area Pix</p>
         </div>
-        <div class="btn-arounded">
+        <div class="btn-arounded" (click)="openIonModal('Pagamento de conta')">
           <div class="btn-pix">
             <ion-icon class="icon-pix" name="barcode-outline"></ion-icon>
           </div>
