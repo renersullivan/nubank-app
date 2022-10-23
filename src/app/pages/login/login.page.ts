@@ -41,5 +41,3 @@ export class LoginPage implements OnInit {
       });
   }
 }
-
-// propriedade que liga o html ao ts
