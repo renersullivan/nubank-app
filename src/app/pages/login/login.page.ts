@@ -14,10 +14,14 @@ export class LoginPage implements OnInit {
 
   cadastrar(event) {
     this.cpf = event.target.value; // valor inserido no input
+  }
+  password(event) {
     this.senha = event.target.value;
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.fazerLogin();
+  }
 
   fazerLogin() {
     let auth = {
@@ -26,20 +30,10 @@ export class LoginPage implements OnInit {
     };
     console.log(auth);
     this.httpClient
-      .post<any>('http://localhost:3333/auth', this.cpf)
+      .post<any>('http://localhost:3333/auth', auth)
       .subscribe((response) => {
         console.log(response);
-        if (response.cpf === true) {
-          this.router.navigateByUrl('/nu/home');
-        } else {
-          console.log('senha errada');
-        }
-      });
-    this.httpClient
-      .post<any>('http://localhost:3333/auth', this.senha)
-      .subscribe((response) => {
-        console.log(response);
-        if (response.senha === true) {
+        if (response.auth === true) {
           this.router.navigateByUrl('/nu/home');
         } else {
           console.log('senha errada');
