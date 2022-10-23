@@ -9,10 +9,12 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 })
 export class LoginPage implements OnInit {
   cpf: string;
+  senha: string;
   constructor(private httpClient: HttpClient, private router: Router) {}
 
   cadastrar(event) {
     this.cpf = event.target.value; // valor inserido no input
+    this.senha = event.target.value;
   }
 
   ngOnInit() {}
@@ -20,14 +22,24 @@ export class LoginPage implements OnInit {
   fazerLogin() {
     let auth = {
       login: this.cpf,
-      senha: '123',
+      senha: this.senha,
     };
     console.log(auth);
     this.httpClient
-      .post<any>('http://localhost:3333/auth', auth)
+      .post<any>('http://localhost:3333/auth', this.cpf)
       .subscribe((response) => {
         console.log(response);
-        if (response.auth === true) {
+        if (response.cpf === true) {
+          this.router.navigateByUrl('/nu/home');
+        } else {
+          console.log('senha errada');
+        }
+      });
+    this.httpClient
+      .post<any>('http://localhost:3333/auth', this.senha)
+      .subscribe((response) => {
+        console.log(response);
+        if (response.senha === true) {
           this.router.navigateByUrl('/nu/home');
         } else {
           console.log('senha errada');
