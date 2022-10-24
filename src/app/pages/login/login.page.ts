@@ -22,6 +22,13 @@ export class LoginPage implements OnInit {
   ngOnInit() {
     this.fazerLogin();
   }
+  apertarEnter() {
+    document.addEventListener('keypress', function (event) {
+      if (event.key === 'Enter') {
+        const btn = document.querySelector('#continuar');
+      }
+    });
+  }
 
   fazerLogin() {
     let auth = {

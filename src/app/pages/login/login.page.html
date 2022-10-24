@@ -25,17 +25,30 @@
       <div class="form-content">
         <form>
           <label for="cpf">CPF</label>
-          <input type="text" name="cpf" id="cpf" (keyup)="cadastrar($event)" />
+          <input
+            type="text"
+            name="cpf"
+            id="cpf"
+            (keyup)="cadastrar($event)"
+            required
+          />
           <label for="senha">senha </label>
           <input
             type="text"
             name="senha"
             id="senha"
             (keyup)="password($event)"
+            required
           />
         </form>
       </div>
-      <div [ngClass]="'btn-continua'" class="btn-enviar" (click)="fazerLogin()">
+      <div
+        [ngClass]="'btn-continua'"
+        type="submit"
+        class="btn-enviar"
+        id="continuar"
+        (click)="fazerLogin()"
+      >
         Continuar
       </div>
 
