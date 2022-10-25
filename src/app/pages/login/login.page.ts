@@ -1,6 +1,6 @@
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-login',
@@ -21,13 +21,6 @@ export class LoginPage implements OnInit {
 
   ngOnInit() {
     this.fazerLogin();
-  }
-  apertarEnter() {
-    document.addEventListener('keypress', function (event) {
-      if (event.key === 'Enter') {
-        const btn = document.querySelector('#continuar');
-      }
-    });
   }
 
   fazerLogin() {

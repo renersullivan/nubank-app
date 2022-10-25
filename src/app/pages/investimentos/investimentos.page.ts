@@ -20,10 +20,11 @@ export class InvestimentosPage implements OnInit {
 
   buscarDadosDeInvestimentos() {
     this.httpClient
-      .get<investimentos>('http://localhost:3000/investimentos')
-      .subscribe((resultado) => {
-        this.investimentos = resultado;
-        console.log(resultado);
+      .get<investimentos>('http://localhost:3333/investimentos')
+      .subscribe((results) => {
+        this.investimentos = results;
+
+        console.log(results);
       });
   }
   toogleValue() {
