@@ -22,15 +22,17 @@ export class LoginPage implements OnInit {
   ngOnInit() {}
 
   fazerLogin() {
+    // alert('clicou no btn');
     let auth = {
       login: this.cpf,
       senha: this.senha,
     };
     console.log(auth);
     this.httpClient
-      .post<any>('http://localhost:3333/auth', auth)
+      .post<any>('http://192.168.15.2:3333/auth', auth)
       .subscribe((response) => {
         console.log(response);
+
         if (response.auth === true) {
           this.router.navigateByUrl('/nu/home');
         } else {

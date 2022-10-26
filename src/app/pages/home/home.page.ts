@@ -70,12 +70,13 @@ export class HomePage implements OnInit {
       componentProps: {
         model_title: param,
       },
+      cssClass: 'alert-home-modal',
     });
 
     modal.onDidDismiss().then((modelData) => {
       if (modelData !== null) {
         this.modelData = modelData.data;
-        console.log('Modal Data : ' + modelData.data);
+        console.log('->>>>>> : ' + modelData.data);
       }
     });
     return await modal.present();

@@ -177,6 +177,7 @@
   display: flex;
   flex-direction: row;
   margin-bottom: 15px;
+  padding-bottom: 20px;
 }
 .card-info {
   display: flex;
@@ -194,7 +195,7 @@
 .card-info-footer {
   display: flex;
   flex-direction: column;
-  min-width: 43%;
+  min-width: 17.5rem;
   height: 260px;
   background-color: var(--ion-color-secondary);
   border-radius: 15px;

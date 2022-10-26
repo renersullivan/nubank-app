@@ -25,10 +25,10 @@
             <a (click)="apertouBotaoEsconderValores()">
               <ion-icon [name]="eyeIconVariable"></ion-icon>
             </a>
-            <a routerLink="" (click)="openIonModal('Opção ajuda ')">
+            <a (click)="openIonModal('Opção ajuda ')">
               <ion-icon name="help-circle-outline"></ion-icon>
             </a>
-            <a routerLink="">
+            <a (click)="openIonModal('Opção Cadastrar ')">
               <ion-icon name="person-add-outline"></ion-icon>
             </a>
           </div>
@@ -113,7 +113,7 @@
           <p class="text-pix">Inverstir</p>
         </div>
       </div>
-      <div class="meus-cartoes">
+      <div class="meus-cartoes" (click)="openIonModal('Meus cartões')">
         <ion-icon name="id-card-outline"></ion-icon>
         <p><a routerLink="cartoes">Meus Cartoes</a></p>
       </div>
