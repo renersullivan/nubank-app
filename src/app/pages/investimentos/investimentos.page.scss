@@ -138,9 +138,10 @@
   padding: 0 1.5625rem;
 }
 .chart {
-  width: 180px;
-  height: 120px;
-  border: 15px solid var(--ion-color-primary);
+  max-width: 8.5rem;
+  width: 11.25rem;
+  height: 7.5rem;
+  border: 0.9375rem solid var(--ion-color-primary);
   border-radius: 100%;
 }
 .text-chart {
