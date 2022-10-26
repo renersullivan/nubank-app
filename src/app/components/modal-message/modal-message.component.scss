@@ -1,15 +1,44 @@
 .modal-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
   height: 100%;
   border: 1px solid red;
-  background: linear-gradient(#e6e6fd, #ffff);
-  .exit {
-    width: 22px;
-    height: 22px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid black;
-    border-radius: 100%;
-  }
+  background: linear-gradient(#e6e6fd, #e6e6fd, #ffff, #ffff);
+}
+.exit {
+  width: 2.1875rem;
+  height: 2.1875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 100%;
+  background-color: var(--ion-color-secondary);
+  color: var(--ion-color-dark-shade);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.exit:hover {
+  transition: all 0.3s;
+  background-color: var(--ion-color-primary);
+  color: var(--ion-color-secondary);
+}
+.titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+}
+.btn-continuar {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--ion-color-primary);
+  justify-content: center;
+  border-radius: 1.5625rem;
+  background: linear-gradient(0.25turn, #1e32ed, #1e32ed, #ffff, #ffff);
+  font-size: 14px;
+  color: black;
 }
