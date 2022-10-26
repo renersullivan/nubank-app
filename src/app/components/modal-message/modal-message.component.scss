@@ -8,6 +8,7 @@
   background: linear-gradient(#e6e6fd, #e6e6fd, #ffff, #ffff);
 }
 .exit {
+  margin: 13px 0 0px 534px;
   width: 2.1875rem;
   height: 2.1875rem;
   display: flex;
@@ -29,7 +30,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid black;
 }
 .btn-continuar {
   padding: 10px;
@@ -41,4 +41,6 @@
   background: linear-gradient(0.25turn, #1e32ed, #1e32ed, #ffff, #ffff);
   font-size: 14px;
   color: black;
+  width: 150px;
+  margin: 0px 66px 51px 381px;
 }
