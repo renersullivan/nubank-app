@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { investimentos } from 'src/app/model/investimentos.model';
+import { invetimentoObjeto } from 'src/app/model/investimentos.model';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./investimentos.page.scss'],
 })
 export class InvestimentosPage implements OnInit {
-  investimentos: investimentos;
+  data: invetimentoObjeto;
 
   constructor(private httpClient: HttpClient) {}
 
@@ -20,12 +20,17 @@ export class InvestimentosPage implements OnInit {
 
   buscarDadosDeInvestimentos() {
     this.httpClient
-      .get<investimentos>('http://localhost:3333/investimentos')
-      .subscribe((results) => {
-        this.investimentos = results;
+      .get<invetimentoObjeto>('http://localhost:3333/investimentos')
+      .subscribe(
+        (results) => {
+          this.data = results;
 
-        console.log(results);
-      });
+          console.log(results);
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
   }
   toogleValue() {
     this.hideValue = !this.hideValue;

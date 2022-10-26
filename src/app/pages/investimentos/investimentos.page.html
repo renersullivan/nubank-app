@@ -10,13 +10,13 @@
     </div>
     <div class="meus-investimentos">
       <p class="p-invest">Meu investimentos</p>
-      <h1>R${{investimentos?.rendTotal.valorTotalD}}</h1>
+      <h1>R${{data.investimentos.rendTotal.valorTotalD}}</h1>
     </div>
     <div class="valor-aplicado">
       <div class="icon-valor"><ion-icon name="archive-outline"></ion-icon></div>
       <div class="text-valor">
         <p>Valor aplicado</p>
-        <h5>R$ {{investimentos?.rendTotal.valorAplicadoD}}</h5>
+        <h5>R$ {{data.investimentos.rendTotal.valorTotalD}}</h5>
       </div>
     </div>
     <div class="rendimento">
@@ -28,9 +28,7 @@
         <h5>
           <ion-icon name="arrow-up-outline"></ion-icon>
 
-          <p *ngIf="investimentos">
-            R${{investimentos?.rendTotal?.rendTotalP}}
-          </p>
+          <p>{{data.investimentos?.rendTotal?.rendTotalP}}</p>
         </h5>
       </div>
     </div>
@@ -75,7 +73,10 @@
             </p>
           </div>
         </div>
-        <div class="bolsa-rendimento" *ngFor="let invest of investimentos">
+        <div
+          class="bolsa-rendimento"
+          *ngFor="let invest of data.investimentos.investTotal;"
+        >
           <div class="divisao-text">
             <div class="icon-rendimento">
               <ion-icon color="purple" name="ellipse-outline"></ion-icon>

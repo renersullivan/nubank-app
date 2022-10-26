@@ -19,9 +19,7 @@ export class LoginPage implements OnInit {
     this.senha = event.target.value;
   }
 
-  ngOnInit() {
-    this.fazerLogin();
-  }
+  ngOnInit() {}
 
   fazerLogin() {
     let auth = {
@@ -36,7 +34,7 @@ export class LoginPage implements OnInit {
         if (response.auth === true) {
           this.router.navigateByUrl('/nu/home');
         } else {
-          console.log('senha errada');
+          alert('login ou senha incorreta');
         }
       });
   }
