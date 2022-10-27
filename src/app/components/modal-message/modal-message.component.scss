@@ -31,6 +31,7 @@
   flex-direction: column;
   align-items: center;
 }
+
 .btn-continuar {
   padding: 10px;
   display: flex;
@@ -38,9 +39,15 @@
   border: 1px solid var(--ion-color-primary);
   justify-content: center;
   border-radius: 1.5625rem;
-  background: linear-gradient(0.25turn, #1e32ed, #1e32ed, #ffff, #ffff);
+  background: linear-gradient(
+    0.25turn,
+    var(--ion-color-primary),
+    var(--ion-color-primary),
+    var(--ion-color-primary-shade),
+    var(--ion-color-primary-tint)
+  );
   font-size: 14px;
-  color: black;
+  color: var(--ion-color-light-tint);
   width: 150px;
   margin: 0px 66px 51px 381px;
 }
