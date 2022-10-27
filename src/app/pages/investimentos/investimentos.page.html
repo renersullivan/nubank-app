@@ -1,6 +1,6 @@
 <ion-content>
   <div class="container-geral">
-    <div class="icons-top">
+    <div class="icons-top" [routerLink]="['/nu']">
       <ion-icon
         [routerLink]="['/nu']"
         class="icon-top"
@@ -10,13 +10,17 @@
     </div>
     <div class="meus-investimentos">
       <p class="p-invest">Meu investimentos</p>
-      <h1>R${{data.investimentos.rendTotal.valorTotalD}}</h1>
+      <h1 *ngIf="data.investimentos">
+        R${{data.investimentos?.rendTotal.valorTotalD}}
+      </h1>
     </div>
     <div class="valor-aplicado">
-      <div class="icon-valor"><ion-icon name="archive-outline"></ion-icon></div>
+      <div class="icon-valor">
+        <ion-icon name="archive-outline"></ion-icon>
+      </div>
       <div class="text-valor">
         <p>Valor aplicado</p>
-        <h5>R$ {{data.investimentos.rendTotal.valorTotalD}}</h5>
+        <h5>R$ {{data.investimentos?.rendTotal.valorTotalD}}</h5>
       </div>
     </div>
     <div class="rendimento">
@@ -74,8 +78,8 @@
           </div>
         </div>
         <div
+          *ngFor="let invest of data.investimentos?.investTotal;"
           class="bolsa-rendimento"
-          *ngFor="let invest of data.investimentos.investTotal;"
         >
           <div class="divisao-text">
             <div class="icon-rendimento">
@@ -124,5 +128,5 @@
         <div class="btn-acessar">Acessar o NuEnsina</div>
       </div>
     </div>
-  </div></ion-content
->
+  </div>
+</ion-content>

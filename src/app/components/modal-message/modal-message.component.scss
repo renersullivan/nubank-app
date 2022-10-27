@@ -43,11 +43,18 @@
     0.25turn,
     var(--ion-color-primary),
     var(--ion-color-primary),
-    var(--ion-color-primary-shade),
-    var(--ion-color-primary-tint)
+    var(--ion-color-primary-tint),
+    var(--ion-color-primary-shade)
   );
   font-size: 14px;
   color: var(--ion-color-light-tint);
   width: 150px;
   margin: 0px 66px 51px 381px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.btn-continuar:hover {
+  background: var(--ion-color-light-tint);
+  color: var(--ion-color-primary-shade);
+  transition: all 0.3s;
 }

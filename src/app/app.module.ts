@@ -8,9 +8,10 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BtnRoundedComponent } from './components/btn-rounded/btn-rounded.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ModalMessageComponent } from './components/modal-message/modal-message.component';
 
 @NgModule({
-  declarations: [AppComponent, BtnRoundedComponent],
+  declarations: [AppComponent, BtnRoundedComponent, ModalMessageComponent],
   imports: [
     BrowserModule,
     IonicModule.forRoot(),

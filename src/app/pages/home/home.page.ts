@@ -75,8 +75,7 @@ export class HomePage implements OnInit {
 
     modal.onDidDismiss().then((modelData) => {
       if (modelData !== null) {
-        this.modelData = modelData.data;
-        console.log('->>>>>> : ' + modelData.data);
+        this.router.navigate([modelData.data]);
       }
     });
     return await modal.present();

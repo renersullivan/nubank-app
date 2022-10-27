@@ -29,7 +29,7 @@ export class LoginPage implements OnInit {
     };
     console.log(auth);
     this.httpClient
-      .post<any>('http://192.168.15.2:3333/auth', auth)
+      .post<any>('http://localhost:3333/auth', auth)
       .subscribe((response) => {
         console.log(response);
 
