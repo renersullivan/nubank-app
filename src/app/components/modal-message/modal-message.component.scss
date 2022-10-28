@@ -1,37 +1,23 @@
 .modal-card {
   display: flex;
   flex-direction: column;
+  padding: 27px 30px 0px;
   justify-content: space-between;
-  width: 100%;
-  height: 100%;
-
-  background: linear-gradient(#e6e6fd, #e6e6fd, #ffff, #ffff);
-}
-.exit {
-  margin: 13px 0 0px 534px;
-  width: 2.1875rem;
-  height: 2.1875rem;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  border: 1px solid transparent;
-  border-radius: 100%;
-  background-color: var(--ion-color-secondary);
-  color: var(--ion-color-dark-shade);
-  cursor: pointer;
-  transition: all 0.3s;
+  background: linear-gradient(#e6e6fd, #e6e6fd, #e6e6fd, #ffff);
 }
-.exit:hover {
-  transition: all 0.3s;
-  background-color: var(--ion-color-primary);
-  color: var(--ion-color-secondary);
-}
+
 .titulo {
   display: flex;
   flex-direction: column;
+  margin-top: 197px;
   align-items: center;
+  justify-content: flex-end;
   p {
-    padding: 72px;
+    margin-bottom: 126px;
+  }
+  h1 {
+    margin: 20px 0px 81px;
   }
 }
 
@@ -42,6 +28,7 @@
   border: 1px solid var(--ion-color-primary);
   justify-content: center;
   border-radius: 1.5625rem;
+  align-items: center;
   background: linear-gradient(
     0.25turn,
     var(--ion-color-primary),
@@ -52,7 +39,7 @@
   font-size: 14px;
   color: var(--ion-color-light-tint);
   width: 150px;
-  margin: 0px 66px 51px 381px;
+
   transition: all 0.3s;
   cursor: pointer;
 }

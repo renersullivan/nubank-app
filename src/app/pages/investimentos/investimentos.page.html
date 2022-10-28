@@ -1,11 +1,7 @@
 <ion-content>
   <div class="container-geral">
-    <div class="icons-top" [routerLink]="['/nu']">
-      <ion-icon
-        [routerLink]="['/nu']"
-        class="icon-top"
-        name="chevron-back-outline"
-      ></ion-icon>
+    <div class="icons-top" [routerLink]="['/nu/home']">
+      <ion-icon class="icon-top" name="chevron-back-outline"></ion-icon>
       <ion-icon cursor class="icon-top" name="help-circle-outline"></ion-icon>
     </div>
     <div class="meus-investimentos">
@@ -20,7 +16,7 @@
       </div>
       <div class="text-valor">
         <p>Valor aplicado</p>
-        <h5>R$ {{data.investimentos?.rendTotal.valorTotalD}}</h5>
+        <h5>R$ {{data?.investimentos?.rendTotal?.valorTotalD}}</h5>
       </div>
     </div>
     <div class="rendimento">

@@ -20,7 +20,7 @@ export class InvestimentosPage implements OnInit {
 
   buscarDadosDeInvestimentos() {
     this.httpClient
-      .get<invetimentoObjeto>('http://localhost:3333/investimentos')
+      .get<invetimentoObjeto>('http://192.168.15.11:3333/investimentos')
       .subscribe(
         (results) => {
           this.data = results;
