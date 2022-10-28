@@ -75,7 +75,6 @@ export class HomePage implements OnInit {
 
     modal.onDidDismiss().then((modelData) => {
       if (modelData !== null) {
-        this.router.navigate([modelData.data]);
       }
     });
     return await modal.present();

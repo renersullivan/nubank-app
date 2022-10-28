@@ -53,60 +53,54 @@
 
       <div class="conta-btns">
         <div class="btn-arounded">
-          <div class="btn-pix" (click)="openIonModal('Transferencia Pix')">
+          <div class="btn-pix" (click)="openIonModal('')">
             <ion-icon class="icon-pix" name="code-working-outline"></ion-icon>
           </div>
           <p class="text-pix">Area Pix</p>
         </div>
-        <div class="btn-arounded" (click)="openIonModal('Pagamento de conta')">
+        <div class="btn-arounded" (click)="openIonModal('')">
           <div class="btn-pix">
             <ion-icon class="icon-pix" name="barcode-outline"></ion-icon>
           </div>
           <p class="text-pix">Pagar</p>
         </div>
-        <div
-          class="btn-arounded"
-          (click)="openIonModal('Transferencia entra conta')"
-        >
+        <div class="btn-arounded" (click)="openIonModal('')">
           <div class="btn-pix">
             <ion-icon class="icon-pix" name="enter-outline"></ion-icon>
           </div>
           <p class="text-pix">Transferir</p>
         </div>
-        <div class="btn-arounded" (click)="openIonModal('Opção de deposito')">
+        <div class="btn-arounded" (click)="openIonModal('')">
           <div class="btn-pix">
             <ion-icon class="icon-pix" name="download-outline"></ion-icon>
           </div>
           <p class="text-pix">Depositar</p>
         </div>
-        <div class="btn-arounded" (click)="openIonModal('Recarregar celular ')">
+        <div class="btn-arounded" (click)="openIonModal('')">
           <div class="btn-pix">
             <ion-icon class="icon-pix" name="phone-portrait-outline"></ion-icon>
           </div>
           <p class="text-pix">Recarga de Celular</p>
         </div>
-        <div class="btn-arounded" (click)="openIonModal('Cobrança ')">
+        <div class="btn-arounded" (click)="openIonModal(' ')">
           <div class="btn-pix">
             <ion-icon class="icon-pix" name="cash-outline"></ion-icon>
           </div>
           <p class="text-pix">Cobrar</p>
         </div>
-        <div class="btn-arounded" (click)="openIonModal('Opção de doação')">
+        <div class="btn-arounded" (click)="openIonModal('')">
           <div class="btn-pix">
             <ion-icon class="icon-pix" name="heart-outline"></ion-icon>
           </div>
           <p class="text-pix">Doação</p>
         </div>
-        <div
-          class="btn-arounded"
-          (click)="openIonModal('Opção de trans.Internacional')"
-        >
+        <div class="btn-arounded" (click)="openIonModal('')">
           <div class="btn-pix">
             <ion-icon class="icon-pix" name="globe-outline"></ion-icon>
           </div>
           <p class="text-pix">Transferir Internac.</p>
         </div>
-        <div class="btn-arounded" routerLink="/investimentos">
+        <div class="btn-arounded" routerLink="/nu/investimentos">
           <div class="btn-pix">
             <ion-icon class="icon-pix" name="cellular-outline"></ion-icon>
           </div>
@@ -117,7 +111,7 @@
         <ion-icon name="id-card-outline"></ion-icon>
         <p><a routerLink="cartoes">Meus Cartoes</a></p>
       </div>
-      <div class="cards-father">
+      <div class="cards-father" (click)="openIonModal('')">
         <div class="card-info">
           <p><a routerLink="">Open Finance</a>, saiba como trazer seus dados</p>
         </div>
@@ -153,13 +147,19 @@
           </p>
           <h3 *ngIf="hideValue === true">********</h3>
         </div>
-        <div class="btn-reserva">Reservar valor como limite</div>
+        <div class="btn-reserva" (click)="openIonModal('')">
+          Reservar valor como limite
+        </div>
       </div>
       <div class="barra"></div>
       <div class="h3"><h3>Acompanhe também</h3></div>
       <div class="assitente">
         <ion-icon name="add-circle-outline"></ion-icon>
-        <p><a routerLink="cartoes">Assistente de pagamentos </a></p>
+        <p>
+          <a routerLink="cartoes" (click)="openIonModal('')"
+            >Assistente de pagamentos
+          </a>
+        </p>
       </div>
       <div class="barra"></div>
       <div class="h3"><h3>Descubra mais</h3></div>
@@ -175,7 +175,9 @@
           />
           <h3>Seguro de vida</h3>
           <p>Um seguro facil de contartar o que cabe no seu bolso.</p>
-          <div routerLink="" class="btn-saiba-conhecer">Conhecer</div>
+          <div class="btn-saiba-conhecer" (click)="openIonModal('')">
+            Conhecer
+          </div>
         </div>
 
         <div class="card-info-footer">
@@ -189,7 +191,9 @@
           />
           <h3>Caixinhas do Nubank</h3>
           <p>Uma nova forma de guardar dinheiro para seus objetivos.</p>
-          <div routerLink="" class="btn-saiba-mais">Saiba Mais</div>
+          <div class="btn-saiba-mais" (click)="openIonModal('')">
+            Saiba Mais
+          </div>
         </div>
         <div class="card-info-footer">
           <img
@@ -197,7 +201,9 @@
           />
           <h3>Seu convite vale prêmios</h3>
           <p>Voçê na Copa do Mundo da FIFA: convide e comcorra.</p>
-          <div routerLink="" class="convidar-amigo">Convidar amigos</div>
+          <div class="convidar-amigo" (click)="openIonModal('')">
+            Convidar amigos
+          </div>
         </div>
         <div class="card-info-footer">
           <img
@@ -211,7 +217,9 @@
           />
           <h3>Conheca o Open Finance</h3>
           <p>É seguro e o passo a passo é supoer simples.</p>
-          <div routerLink="" class="btn-saiba-mais">Saiba mais</div>
+          <div class="btn-saiba-mais" (click)="openIonModal('')">
+            Saiba mais
+          </div>
         </div>
         <div class="card-info-footer">
           <img
@@ -225,7 +233,7 @@
           />
           <h3>Chegou o NuEnsina</h3>
           <p>Para voçê aprender novos jeitos de cuidar da sua grana.</p>
-          <div routerLink="" class="btn-saiba-conhecer">Conhecer</div>
+          <div class="btn-saiba-conhecer">Conhecer</div>
         </div>
         <div class="card-info-footer">
           <img
@@ -238,7 +246,9 @@
           />
           <h3>Fatura parcelada</h3>
           <p>Veja quando vale apena parcelar a fatura do seu cartão.</p>
-          <div routerLink="" class="btn-saiba-mais">Saiba Mais</div>
+          <div class="btn-saiba-mais" (click)="openIonModal('')">
+            Saiba Mais
+          </div>
         </div>
       </div>
     </div>

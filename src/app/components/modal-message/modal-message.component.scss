@@ -4,7 +4,7 @@
   justify-content: space-between;
   width: 100%;
   height: 100%;
-  border: 1px solid red;
+
   background: linear-gradient(#e6e6fd, #e6e6fd, #ffff, #ffff);
 }
 .exit {
@@ -30,6 +30,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  p {
+    padding: 72px;
+  }
 }
 
 .btn-continuar {
